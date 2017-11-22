@@ -1,0 +1,32 @@
+#about-author{
+	background:url(../images/author-bg.jpg)no-repeat center top;
+	background-size:cover;
+	width:100%;				
+	padding:100px 0;
+	.img-cont{
+		background:url(../images/author.jpg)no-repeat 0 0;
+		background-size:cover;
+	    border-radius:50%;
+	    width:350px;
+	    height:350px;
+	    margin:0 auto 30px;
+	    border:15px solid #556173;
+	    @media screen and (max-width:480px){
+			    width:270px;
+			    height:270px;
+		}
+	}
+	.text-cont{
+		h2{
+			color:#fff;
+			font-weight:bold;
+			padding:0 0 30px;
+			span{
+				color:$brown;
+			}
+		}
+		p{
+			color:#fff;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+#about-book{
+	background:url(../images/book-bg.jpg)no-repeat center top;
+	background-size:cover;
+	width:100%;
+	position:relative;
+	.wrapper{		
+		background:rgba(255,255,255, 0.5);		
+		.text-cont{
+			padding:200px 0 50px;
+			@media screen and (max-width:480px){
+				padding:100px 0 50px;
+			}
+			h2{
+				padding:0 0 30px;
+				font-weight:bold;
+				span{
+					color:$brown;
+				}
+			}
+		}		
+		.img-cont{
+			position:absolute;
+			width:350px;
+			margin:0 auto;
+			left:0;
+			right:0;
+			top:-240px;
+			@media screen and (max-width:350px){
+				width:300px;
+			}
+			img{
+				@media screen and (max-width:480px){
+					width:250px;
+				}
+			}
+		}
+	}
+}

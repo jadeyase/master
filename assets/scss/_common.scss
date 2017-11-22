@@ -1,0 +1,135 @@
+body{
+	font-family:$opensans;
+}
+h1, h2, h3, h4{
+	text-transform:$heading-text-transform;
+	margin:0;
+}
+h1{
+	font-family:$lora;
+	color:#c4c9e8;
+	font-size:138px;
+	@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+		font-size:90px;
+	}
+	@media screen and (max-width: 768px){
+		font-size:70px;
+	}
+	@media screen and (max-width:480px){
+		font-size:50px;
+	}
+}
+h2{
+	font-family:$lora;
+	font-size:32px;
+	color:$base-color;	
+}
+h3{
+	font-family:$opensans;
+	font-size:35px;
+	color:#fff;
+}
+p{
+	line-height:200%;
+	font-family:$opensans;
+	font-size:16px;
+	color:$base-color;
+	padding:0 0 15px;
+}
+a{
+	font-family:$opensans;
+	color:$brown;
+	&:hover, &:focus, &:active{
+		background:none;
+		text-decoration:underline;
+	}
+}
+.navbar{
+	background:#fff;
+	margin:0;	
+	@media screen and (max-width: 768px){
+		border-color:transparent;
+	}
+	.nav{
+		li{
+			padding:10px 0;
+			margin-left:98px;
+			@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+				margin-left:72px;			
+			}
+			@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+				margin-left:40px;
+			}
+			@media screen and (max-width: 768px){
+				margin-left:0;
+				padding:0 20px;	
+			}
+		}		
+		.fahome, .fabook, .faauthor, .faorder, .fablog, .facontact{
+			a{
+				color:$base-color;
+				&:before{
+					font-family:FontAwesome;
+					position:absolute;
+					left:-8px;
+					top:16px;
+					font-size:19px;	
+					@media screen and (max-width:768px){
+						top:10px;
+					}				
+				}
+				@media(min-width:768px){
+					&:hover{color:$brown !important;}
+				}				
+			}
+			@media(max-width:768px){
+				&:hover{background: $brown; color:#fff;}
+				&:focus{color:#fff !important;}
+			}
+		}
+		.fahome{a{&:before{content:'\f015';}}}
+		.fabook{a{&:before{content:'\f02d';}}}
+		.faauthor{a{&:before{content:'\f007';}}}
+		.faorder{a{&:before{content:'\f07a';}}}
+		.fablog{a{&:before{content:'\f15b';}}}
+		.facontact{a{&:before{content:'\f0e0';}}}
+	}
+	.navbar-toggle{			
+		border-color:$brown;;		
+		&:hover{
+			background-color:$brown;
+		}
+		span{
+			background-color:#cba99d !important;							
+		}
+	}	
+}
+.navbar-inverse .navbar-nav > li > a:focus{
+		color:$base-color;
+}
+footer{
+	.copyright{
+		padding:15px 0 10px;
+		p{
+			font-size:14px;
+			display:inline-block;
+			color:$base-color;	
+			padding:5px 0 0 0 !important;	
+			span{
+				background:url(../images/litfire-logo.png)no-repeat 0 6px;
+				padding:10px 0 10px 25px;
+
+			}
+			a{
+				font-weight:bold;
+				text-decoration:none;
+				color:$base-color;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+}
+
+

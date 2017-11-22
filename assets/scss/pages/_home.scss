@@ -1,0 +1,91 @@
+#banner{
+	background: url(../images/banner-bg.jpg)no-repeat center top;
+	background-size:cover;
+	width:100%;
+	padding:115px 0 300px;
+	h2{
+		font-family:$lora;
+		font-size:85px;
+		color:#fff;
+		@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+			font-size:55px;
+		}
+		@media screen and (max-width: $screen-xs-max){
+			font-size:45px;
+		}
+		@media screen and (max-width:480px){
+			font-size:30px;
+		}
+	}
+	h3{
+		display:inline-block;
+    	margin-top:10px;
+    	padding:20px 16px;
+    	border-top:2px solid #fff;
+    	border-bottom:2px solid #fff;
+		@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+			font-size:22px;
+		}
+		@media screen and (max-width: $screen-xs-max){
+			font-size:20px;
+		}	
+		@media screen and (max-width:480px){
+			font-size:15px;
+		}    	
+	}
+	.banner-price{
+		padding-top:25px;
+		a{
+		    border:1px solid #fff;
+		    color:#fff;
+		    font-size:18px;
+		    padding:20px 0;
+		    width:215px;
+		    display:inline-block;
+		    margin-left:10px;
+		    &:hover{
+		    	text-decoration:none;
+		    	color:#c4c9e8;
+		    	border-color:#c4c9e8;
+		    }	
+		    &:focus{
+		    	border-color:#fff;
+		    	color:#fff;
+		    	text-decoration:none;
+		    }
+		    @media screen and (max-width:600px){
+				font-size:15px;
+				width:180px;
+		    }	
+		    @media screen and (max-width:480px){
+				display:block;
+				margin:15px auto 0;
+		    }
+		}
+	}
+}
+#reviews{
+	.wrapper{	
+		border-bottom:1px solid #a2acac;
+		.text-cont{
+			padding:0 0 50px;
+			h2{
+				font-weight:bold;
+				padding:0 0 30px;
+				span{
+					font-size:32px;
+					color:$brown;
+				}
+			}
+			p{
+				padding:0 0 25px;
+			}		
+			span{
+				font-size:16px;
+				color:$brown;
+				font-weight:bold;
+			}
+		}
+	}
+	
+}
